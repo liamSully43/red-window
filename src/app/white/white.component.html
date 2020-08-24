@@ -1,0 +1,16 @@
+<div class="col-lg-12 page-selector-container">
+    <i class="fas fa-arrow-left"></i>
+    <input type="number" class="page-selector" placeholder="0" value="{{ page }}">
+    <i class="fas fa-arrow-right"></i>
+</div>
+<main>
+    <p *ngIf="noResults.state; else showResults" class="no-results">{{ noResults.message }}</p>
+    <ng-template #showResults>
+        <app-results *ngFor="let result of results; index as i;" [result]="results[i]"></app-results>
+    </ng-template>
+</main>
+<div class="col-lg-12 page-selector-container">
+    <i class="fas fa-arrow-left"></i>
+    <input type="number" class="page-selector" placeholder="0" value="{{ page }}">
+    <i class="fas fa-arrow-right"></i>
+</div>

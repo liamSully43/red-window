@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "red-window"
+  },
+  "targets": {
+    "red-window": {
+      "hosting": {
+        "red-window": [
+          "red-window"
+        ]
+      }
+    }
+  }
+}

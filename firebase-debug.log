@@ -1,0 +1,25 @@
+[debug] [2020-04-08T19:36:58.493Z] ----------------------------------------------------------------------
+[debug] [2020-04-08T19:36:58.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Liam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-08T19:36:58.495Z] CLI Version:   8.0.2
+[debug] [2020-04-08T19:36:58.495Z] Platform:      win32
+[debug] [2020-04-08T19:36:58.495Z] Node Version:  v12.14.0
+[debug] [2020-04-08T19:36:58.496Z] Time:          Wed Apr 08 2020 20:36:58 GMT+0100 (British Summer Time)
+[debug] [2020-04-08T19:36:58.496Z] ----------------------------------------------------------------------
+[debug] [2020-04-08T19:36:58.496Z] 
+[debug] [2020-04-08T19:36:58.502Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-08T19:36:58.502Z] > authorizing via signed-in user
+[debug] [2020-04-08T19:36:58.502Z] [iam] checking project red-window for permissions ["firebase.projects.get"]
+[debug] [2020-04-08T19:36:58.505Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/red-window:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-08T19:36:59.415Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 08 Apr 2020 19:37:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=804","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-08T19:36:59.420Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/red-window  
+ 
+[debug] [2020-04-08T19:37:00.058Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 08 Apr 2020 19:37:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Liam\Documents\Work stuff\Web Development\Angular\red-window'...
+[info] 
+[debug] [2020-04-08T19:37:00.065Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/red-window/webApps/-/config  
+ 
+[debug] [2020-04-08T19:37:01.353Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 08 Apr 2020 19:37:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000

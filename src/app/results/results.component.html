@@ -1,0 +1,12 @@
+<div class="results">
+    <h1 class="result-name">{{ result.user.name }}</h1>
+    <a href="{{ result.user.links.html }}" target="_blank" class="result-username" title="Visit {{ result.user.first_name }}'s account'">
+        <img src="{{ result.user.profile_image.small }}" class="result-profile" alt="Photographer's profile picture">
+        @{{ result.user.username }}
+    </a>
+    <a href="{{ result.urls.raw }}" target="_blank" class="result-image-link" title="View the image in a larger format">
+        <img src="{{ result.urls.small }}" class="result-img" alt="{{ result.alt_description }}">
+    </a>
+    <p class="result-descr">{{ result.description }}</p>
+    <p class="result-likes"><i class="fas fa-thumbs-up"></i> {{ result.likes }}</p>
+</div>

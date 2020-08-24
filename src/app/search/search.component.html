@@ -1,0 +1,33 @@
+<div class="col-lg-12 page-selector-container">
+    <i class="fas fa-arrow-left"></i>
+    <input type="number" class="page-selector" placeholder="0" value="{{ page }}">
+    <i class="fas fa-arrow-right"></i>
+</div>
+<div class="col-lg-12 row input-container">
+    <div class="col-lg-12 align-middle search-container">
+        <select class="col-lg-2 col-md-3 col-sm-3 text-center colour-filter">
+            <option class="none" value="none">No Colour Filter</option>
+            <option class="blue" value="#003fff"></option>
+            <option class="green" value="#00ff1d"></option>
+            <option class="yellow" value="#ffff14"></option>
+            <option class="orange" value="#ffa100"></option>
+            <option class="red" value="#E50A14"></option>
+            <option class="purple" value="#db00a8"></option>
+            <option class="black" value="black"></option>
+            <option class="white" value="white"></option>
+        </select>
+        <input class="col-lg-5 col-md-6 col-sm-5 text-center" type="text" placeholder="Search" id="search">
+        <button class="col-lg-2 col-md-2 col-sm-3 text-center white" id="search-btn"><i class="fas fa-search"></i> Search</button>
+    </div>
+</div>
+<main>
+    <p *ngIf="noResults.state; else showResults" class="no-results">{{ noResults.message }}</p>
+    <ng-template #showResults>
+        <app-results *ngFor="let result of results; index as i;" [result]="results[i]"></app-results>
+    </ng-template>
+</main>
+<div class="col-lg-12 page-selector-container">
+    <i class="fas fa-arrow-left"></i>
+    <input type="number" class="page-selector" placeholder="0" value="{{ page }}">
+    <i class="fas fa-arrow-right"></i>
+</div>
